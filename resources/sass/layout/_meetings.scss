@@ -1,0 +1,17 @@
+.challenge-meetings {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #eef2f7;
+}
+
+.challenge-meetings__title {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #0b3a42;
+    margin-bottom: 1rem;
+
+    svg {
+        margin-inline-end: 1rem;
+    }
+}
