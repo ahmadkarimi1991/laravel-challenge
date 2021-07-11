@@ -118,19 +118,21 @@
 
     <section class="challenge-form">
         <div class="container">
-            <div>Form</div>
+            <h2 class="challenge-form__title">فرم ثبت نام شبکه ابریارهای آروان</h2>
+            <p class="challenge-form__text">در صورتی که مایل باشید می‌توانید از برای ما رزومه بفرستید، لطفا فرم زیر را پر کنید.</p>
         </div>
     </section>
 
     <section class="challenge-market">
         <div class="container">
-            <div>Market</div>
+            <h2 class="challenge-market__title">دسته‌بندی‌های محبوب بازارچه ابری</h2>
+            <p class="challenge-market__text">بازارچه‌ی ابری آروان، فروشگاهی متشکل از صدها اپلیکیشن و نرم‌افزار ابری که به شما اجازه می‌دهد به سرعت محصول مورد نیاز خود را یافته و با یک کلیک آن را راه‌اندازی کنید و هزینه را تنها بر اساس مصرف‌تان بپردازید.</p>
         </div>
     </section>
 
     <section class="challenge-success">
         <div class="container">
-            <div>Success</div>
+            <h2 class="challenge-success__title">پروژه‌های موفق</h2>
         </div>
     </section>
 
