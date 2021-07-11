@@ -132,7 +132,8 @@ a {
 
 .challenge-projects {
   background-color: #f5f7fa;
-  padding: 9.5rem 0 14rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .challenge-projects__title,
