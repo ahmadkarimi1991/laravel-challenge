@@ -1,59 +1,108 @@
-.header {
-    padding-top: 72px;
-    padding-bottom: 92px;
+.challenge-intro {
     background-color: #1fc5b9;
+    padding-top: 3.5rem;
 }
 
-.header-nav-main {
+.challenge-intro__content {
+    padding: 5rem 0;
+}
+
+.challenge-intro__title {
+    font-size: 3.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: $color-white;
+    text-shadow: #02a4a6 0 6px 0;
+}
+
+.header {
+    background-color: inherit;
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+}
+
+.header-bar__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav-start {
+.header-bar__start {
+    display: flex;
+    align-items: center;
+
+    .header-bar__item {
+        margin-inline-start: 3rem;
+    }
+}
+
+.header-bar__end {
     display: flex;
     align-items: center;
 }
 
-.header-content {
-    padding-top: 89px;
-    padding-bottom: 78px;
+.header-bar__item-logo {
+    svg {
+        color: $color-white;
+        fill: currentColor;
+        transition: .2s;
+    }
+
+    &:hover {
+        svg {
+            color: #004545;
+        }
+    }
 }
 
-.header-title {
-    font-size: 60px;
-    font-weight: bold;
-    color: #fafafa;
-    text-align: center;
-    margin-bottom: 0;
-    text-shadow: #02a4a6 0 6px 0;
+.header-bar__item,
+.header-bar__sign-in,
+.header-bar__language {
+    color: $color-white;
+    font-size: 1rem;
+    transition: color .2s;
+
+    &:hover {
+        color: rgba($color: $color-white, $alpha: 0.85);
+    }
 }
 
-.header-nav-end {
-    display: flex;
-    align-items: center;
+.header-bar__sign-up,
+.header-bar__language,
+.header-bar__item-tel {
+    margin-inline-start: 3rem;
 }
 
-.header-nav-tel {
-    display: block;
-    width: 46px;
-    height: 46px;
-    background-color: rgba($color: #000000, $alpha: 0.1);
-    border-radius: 50%;
-}
-
-.header-nav-link {
+.header-bar__sign-up {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
-    height: 46px;
-    padding: 0 39px;
+    height: 2.875rem;
+    padding: 0 2.5rem;
+    background-color: rgba($color: #033432, $alpha: 0.1);
+    border-radius: 9999px;
+    color: $color-white;
 
     &:hover {
-        background-color: rgba($color: #033432, $alpha: 0.1);
-        border-radius: 999px;
+        color: $color-white;
+    }
+}
+
+.header-bar__item-tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 2.875rem;
+    height: 2.875rem;
+    background-color: rgba($color: #033432, $alpha: 0.1);
+    color: $color-white;
+    border-radius: 9999px;
+
+    &:hover {
         color: $color-white;
     }
 }
