@@ -13,10 +13,11 @@
 @import 'base/typography';
 
 // 4. Layout-related sections
-@import 'layout/header';
+@import 'layout/intro';
+@import 'layout/projects';
 
 // 5. Components
-@import 'components/buttons';
+@import 'components/tabs';
 
 // 6. Page-specific styles
 

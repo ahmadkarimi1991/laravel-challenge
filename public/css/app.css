@@ -20,7 +20,6 @@ body {
   font-family: YekanBakh;
   min-height: 100%;
   background-color: #fff;
-  position: relative;
 }
 
 a {
@@ -129,4 +128,62 @@ a {
 }
 .header-bar__item-tel:hover {
   color: #fff;
+}
+
+.challenge-projects {
+  background-color: #f5f7fa;
+  padding: 9.5rem 0 14rem;
+}
+
+.challenge-projects__title,
+.challenge-projects__text {
+  text-align: center;
+}
+
+.challenge-projects__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.challenge-projects__text {
+  font-size: 1.125rem;
+  margin-bottom: 2.875rem;
+}
+
+.tabs__tab-container {
+  display: flex;
+}
+
+.tabs__tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 3.875rem;
+  padding: 0 3rem;
+  background-color: #fff;
+  background-color: #e7ecf4;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  color: #033432;
+}
+.tabs__tab:not(:first-of-type) {
+  -webkit-margin-start: 1.625rem;
+          margin-inline-start: 1.625rem;
+}
+.tabs__tab:hover {
+  color: #033432;
+}
+.tabs__tab.tabs__tab-active {
+  background-color: #fff;
+  box-shadow: 0 -3px 3px -3px rgba(26, 187, 176, 0.2), 3px 0 3px -3px rgba(26, 187, 176, 0.2), -3px 0 3px -3px rgba(26, 187, 176, 0.2);
+  color: #6a7d9b;
+}
+
+.tab__content {
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 3.5rem 6.75rem;
 }

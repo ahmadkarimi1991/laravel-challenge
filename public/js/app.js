@@ -1842,7 +1842,35 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-console.log('App is running...');
+var tabs = document.querySelector('.tabs');
+var tabsButtons = tabs.querySelectorAll('.tabs__tab');
+var tabsContents = tabs.querySelectorAll('.tab__content');
+
+function displayCurrentTab(current) {
+  for (var i = 0; i < tabsContents.length; i++) {
+    if (current === i) {
+      tabsContents[i].style.display = 'block';
+      tabsButtons.forEach(function (element) {
+        element.classList.remove('tabs__tab-active');
+      });
+      tabsButtons[i].classList.add('tabs__tab-active');
+    } else {
+      tabsContents[i].style.display = 'none';
+    }
+  }
+}
+
+displayCurrentTab(0);
+tabs.addEventListener('click', function (event) {
+  if (event.target.className === 'tabs__tab') {
+    for (var i = 0; i < tabsButtons.length; i++) {
+      if (event.target === tabsButtons[i]) {
+        displayCurrentTab(i);
+        break;
+      }
+    }
+  }
+});
 
 /***/ }),
 
