@@ -220,6 +220,7 @@ a {
   border-radius: 0.625rem;
   background-color: #fff;
   aspect-ratio: 1/1;
+  overflow: hidden;
 }
 .challenge-market__item:hover {
   border-color: #00baba;
