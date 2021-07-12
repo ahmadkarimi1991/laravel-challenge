@@ -206,28 +206,22 @@ a {
 }
 
 .challenge-market__items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .challenge-market__item {
-  width: 25%;
-  margin-top: 1rem;
-}
-
-.challenge-market__item-link {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 15rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
   border: 2px solid #cff2f2;
   border-radius: 0.625rem;
   background-color: #fff;
+  aspect-ratio: 1/1;
 }
-.challenge-market__item-link:hover {
+.challenge-market__item:hover {
   border-color: #00baba;
 }
 
@@ -254,6 +248,9 @@ a {
   padding-top: 12px;
   padding-bottom: 12px;
   margin: 45px auto 0;
+}
+.challenge-market__more-btn:hover {
+  color: #20c5ba;
 }
 
 .challenge-success {
