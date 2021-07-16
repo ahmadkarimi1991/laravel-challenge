@@ -20,13 +20,14 @@
 }
 
 .challenge-market__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .challenge-market__item {
     display: flex;
+    flex-basis: 250px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -35,6 +36,7 @@
     background-color: $color-white;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    margin: 1rem;
 
     &:hover {
         border-color: #00baba;
