@@ -1,8 +1,8 @@
-.tabs__tab-container {
+.challenge-projects__tabs-wrapper {
     display: flex;
 }
 
-.tabs__tab {
+.challenge-projects__tab {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +23,14 @@
         color: #033432;
     }
 
-    &.tabs__tab-active {
+    &.is-active {
         background-color: $color-white;
         box-shadow: 0 -3px 3px -3px rgba($color: #1abbb0, $alpha: 0.2), 3px 0 3px -3px rgba($color: #1abbb0, $alpha: 0.2), -3px 0 3px -3px rgba($color: #1abbb0, $alpha: 0.2);
         color: #6a7d9b;
     }
 }
 
-.tab__content {
+.challenge-projects__tab-content {
     background-color: $color-white;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;

@@ -1842,18 +1842,18 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var tabs = document.querySelector('.tabs');
-var tabsButtons = tabs.querySelectorAll('.tabs__tab');
-var tabsContents = tabs.querySelectorAll('.tab__content');
+var tabs = document.querySelector('.challenge-projects__tabs');
+var tabsButtons = tabs.querySelectorAll('.challenge-projects__tab');
+var tabsContents = tabs.querySelectorAll('.challenge-projects__tab-content');
 
 function displayCurrentTab(current) {
   for (var i = 0; i < tabsContents.length; i++) {
     if (current === i) {
       tabsContents[i].style.display = 'block';
       tabsButtons.forEach(function (element) {
-        element.classList.remove('tabs__tab-active');
+        element.classList.remove('is-active');
       });
-      tabsButtons[i].classList.add('tabs__tab-active');
+      tabsButtons[i].classList.add('is-active');
     } else {
       tabsContents[i].style.display = 'none';
     }
@@ -1862,7 +1862,7 @@ function displayCurrentTab(current) {
 
 displayCurrentTab(0);
 tabs.addEventListener('click', function (event) {
-  if (event.target.className === 'tabs__tab') {
+  if (event.target.className === 'challenge-projects__tab') {
     for (var i = 0; i < tabsButtons.length; i++) {
       if (event.target === tabsButtons[i]) {
         displayCurrentTab(i);

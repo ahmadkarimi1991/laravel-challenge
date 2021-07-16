@@ -1,17 +1,17 @@
 require('./bootstrap');
 
-const tabs = document.querySelector('.tabs');
-const tabsButtons = tabs.querySelectorAll('.tabs__tab');
-const tabsContents = tabs.querySelectorAll('.tab__content');
+const tabs = document.querySelector('.challenge-projects__tabs');
+const tabsButtons = tabs.querySelectorAll('.challenge-projects__tab');
+const tabsContents = tabs.querySelectorAll('.challenge-projects__tab-content');
 
 function displayCurrentTab(current) {
     for (let i = 0; i < tabsContents.length; i++) {
         if (current === i) {
             tabsContents[i].style.display = 'block';
             tabsButtons.forEach((element) => {
-                element.classList.remove('tabs__tab-active');
+                element.classList.remove('is-active');
             });
-            tabsButtons[i].classList.add('tabs__tab-active');
+            tabsButtons[i].classList.add('is-active');
         } else {
             tabsContents[i].style.display = 'none';
         }
@@ -21,7 +21,7 @@ function displayCurrentTab(current) {
 displayCurrentTab(0);
 
 tabs.addEventListener('click', event => {
-    if (event.target.className === 'tabs__tab') {
+    if (event.target.className === 'challenge-projects__tab') {
         for (let i = 0; i < tabsButtons.length; i++) {
             if (event.target === tabsButtons[i]) {
                 displayCurrentTab(i);
