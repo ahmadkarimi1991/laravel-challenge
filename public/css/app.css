@@ -315,10 +315,11 @@ a {
   font-size: 1rem;
   cursor: pointer;
   background-color: #d4dfee;
-  border-radius: 12px;
-  padding: 8px 15px;
-  margin-left: 16px;
-  min-width: 166px;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+  min-width: 232px;
   text-align: center;
 }
 
