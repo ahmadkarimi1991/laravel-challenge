@@ -65,15 +65,16 @@
     display: block;
     font-size: 19px;
     color: #20c5ba;
-    border: 2px solid #1fc5b9;
+    border: 2px solid currentColor;
     max-width: 250px;
     text-align: center;
     border-radius: 6px;
     padding-top: 12px;
     padding-bottom: 12px;
     margin: 45px auto 0;
+    transition: .2s;
 
     &:hover {
-        color: #20c5ba;
+        color: #009e93;
     }
 }
