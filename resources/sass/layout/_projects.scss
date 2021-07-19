@@ -21,6 +21,8 @@
 
 .challenge-projects__tabs {
     display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .challenge-projects__tab {
@@ -28,61 +30,81 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 61px;
-    padding: 0 3rem;
-    background-color: $white;
-    background-color: #e7ecf4;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    color: #033432;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background-color: rgba($color: #00baba, $alpha: 0.1);
+    border-radius: .75rem;
+    color: #00baba;
     cursor: pointer;
-    position: relative;
+    min-width: 140px;
 
     &:not(:first-of-type) {
-        margin-inline-start: 1.625rem;
-
-        &.challenge-projects__tab--active {
-            &::before {
-                content: url("../../../public/images/tab-corner.svg");
-                position: absolute;
-                bottom: -11px;
-                right: -12px;
-                transform: scaleX(-1);
-            }
-        }
-    }
-
-    &:hover {
-        color: #033432;
-    }
-
-    &.challenge-projects__tab--active {
-        background-color: $white;
-        box-shadow: -10px 9px 16px 0px rgb(26 187 176 / 20%);
-        color: #6a7d9b;
-
-        &::after {
-            content: url("../../../public/images/tab-corner.svg");
-            position: absolute;
-            bottom: -11px;
-            left: -12px;
-        }
+        margin-inline-start: .5rem;
     }
 
     svg {
-        margin-inline-end: 1rem;
+        display: none;
     }
 }
 
-.challenge-projects__boxes {
-    position: relative;
-    z-index: 99;
-}
+@media (min-width: 992px) {
+    .challenge-projects__tab {
+        height: 61px;
+        padding: 0 3rem;
+        background-color: $white;
+        background-color: #e7ecf4;
+        border-radius: 0;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        color: #033432;
+        position: relative;
 
-.challenge-projects__box {
-    background-color: $white;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    padding: 3.5rem 6.75rem;
+        &:not(:first-of-type) {
+            margin-inline-start: 1.625rem;
+
+            &.challenge-projects__tab--active {
+                &::before {
+                    content: url("../../../public/images/tab-corner.svg");
+                    position: absolute;
+                    bottom: -11px;
+                    right: -12px;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+
+        &:hover {
+            color: #033432;
+        }
+
+        &.challenge-projects__tab--active {
+            background-color: $white;
+            box-shadow: -10px 9px 16px 0px rgb(26 187 176 / 20%);
+            color: #6a7d9b;
+
+            &::after {
+                content: url("../../../public/images/tab-corner.svg");
+                position: absolute;
+                bottom: -11px;
+                left: -12px;
+            }
+        }
+
+        svg {
+            margin-inline-end: 1rem;
+        }
+    }
+
+    .challenge-projects__boxes {
+        position: relative;
+        z-index: 99;
+    }
+
+    .challenge-projects__box {
+        background-color: $white;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        padding: 3.5rem 6.75rem;
+    }
 }
