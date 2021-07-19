@@ -440,6 +440,7 @@ a {
     margin-top: 45px;
   }
   .challenge-meetings__box::before {
+    content: url(/images/triangle.svg?f72de6f1af0a54047ae74ae5eeb0026b);
     top: -15px;
     right: 40px;
     position: absolute;
