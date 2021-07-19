@@ -18,3 +18,44 @@
     font-size: 1.125rem;
     margin-bottom: 2.875rem;
 }
+
+.challenge-projects__tabs {
+    display: flex;
+}
+
+.challenge-projects__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3.875rem;
+    padding: 0 3rem;
+    background-color: $white;
+    background-color: #e7ecf4;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: #033432;
+    cursor: pointer;
+
+    &:not(:first-of-type) {
+        margin-inline-start: 1.625rem;
+    }
+
+    &:hover {
+        color: #033432;
+    }
+
+    &.challenge-projects__tab--active {
+        background-color: $white;
+        box-shadow: 0 -3px 3px -3px rgba($color: #1abbb0, $alpha: 0.2), 3px 0 3px -3px rgba($color: #1abbb0, $alpha: 0.2), -3px 0 3px -3px rgba($color: #1abbb0, $alpha: 0.2);
+        color: #6a7d9b;
+    }
+}
+
+.challenge-projects__box {
+    background-color: $white;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 3.5rem 6.75rem;
+}

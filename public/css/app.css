@@ -187,6 +187,45 @@ a {
   margin-bottom: 2.875rem;
 }
 
+.challenge-projects__tabs {
+  display: flex;
+}
+
+.challenge-projects__tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 3.875rem;
+  padding: 0 3rem;
+  background-color: #fff;
+  background-color: #e7ecf4;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  color: #033432;
+  cursor: pointer;
+}
+.challenge-projects__tab:not(:first-of-type) {
+  -webkit-margin-start: 1.625rem;
+          margin-inline-start: 1.625rem;
+}
+.challenge-projects__tab:hover {
+  color: #033432;
+}
+.challenge-projects__tab.challenge-projects__tab--active {
+  background-color: #fff;
+  box-shadow: 0 -3px 3px -3px rgba(26, 187, 176, 0.2), 3px 0 3px -3px rgba(26, 187, 176, 0.2), -3px 0 3px -3px rgba(26, 187, 176, 0.2);
+  color: #6a7d9b;
+}
+
+.challenge-projects__box {
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 3.5rem 6.75rem;
+}
+
 .challenge-meetings {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -578,42 +617,4 @@ a {
   font-size: 2.5rem;
   margin-bottom: 0;
   text-align: center;
-}
-
-.challenge-projects__tabs-wrap {
-  display: flex;
-}
-
-.challenge-projects__tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 3.875rem;
-  padding: 0 3rem;
-  background-color: #fff;
-  background-color: #e7ecf4;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  color: #033432;
-}
-.challenge-projects__tab:not(:first-of-type) {
-  -webkit-margin-start: 1.625rem;
-          margin-inline-start: 1.625rem;
-}
-.challenge-projects__tab:hover {
-  color: #033432;
-}
-.challenge-projects__tab.is-active {
-  background-color: #fff;
-  box-shadow: 0 -3px 3px -3px rgba(26, 187, 176, 0.2), 3px 0 3px -3px rgba(26, 187, 176, 0.2), -3px 0 3px -3px rgba(26, 187, 176, 0.2);
-  color: #6a7d9b;
-}
-
-.challenge-projects__tab-content {
-  background-color: #fff;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  padding: 3.5rem 6.75rem;
 }

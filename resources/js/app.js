@@ -2,18 +2,19 @@ require('./bootstrap');
 
 const tabs = document.querySelector('.challenge-projects__tabs');
 const tabsButtons = tabs.querySelectorAll('.challenge-projects__tab');
-const tabsContents = tabs.querySelectorAll('.challenge-projects__tab-content');
+const boxes = document.querySelector('.challenge-projects__boxes');
+const tabsBoxes = boxes.querySelectorAll('.challenge-projects__box');
 
 function displayCurrentTab(current) {
-    for (let i = 0; i < tabsContents.length; i++) {
+    for (let i = 0; i < tabsBoxes.length; i++) {
         if (current === i) {
-            tabsContents[i].style.display = 'block';
+            tabsBoxes[i].style.display = 'block';
             tabsButtons.forEach((element) => {
-                element.classList.remove('is-active');
+                element.classList.remove('challenge-projects__tab--active');
             });
-            tabsButtons[i].classList.add('is-active');
+            tabsButtons[i].classList.add('challenge-projects__tab--active');
         } else {
-            tabsContents[i].style.display = 'none';
+            tabsBoxes[i].style.display = 'none';
         }
     }
 }

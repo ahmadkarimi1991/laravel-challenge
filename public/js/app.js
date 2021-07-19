@@ -1844,18 +1844,19 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var tabs = document.querySelector('.challenge-projects__tabs');
 var tabsButtons = tabs.querySelectorAll('.challenge-projects__tab');
-var tabsContents = tabs.querySelectorAll('.challenge-projects__tab-content');
+var boxes = document.querySelector('.challenge-projects__boxes');
+var tabsBoxes = boxes.querySelectorAll('.challenge-projects__box');
 
 function displayCurrentTab(current) {
-  for (var i = 0; i < tabsContents.length; i++) {
+  for (var i = 0; i < tabsBoxes.length; i++) {
     if (current === i) {
-      tabsContents[i].style.display = 'block';
+      tabsBoxes[i].style.display = 'block';
       tabsButtons.forEach(function (element) {
-        element.classList.remove('is-active');
+        element.classList.remove('challenge-projects__tab--active');
       });
-      tabsButtons[i].classList.add('is-active');
+      tabsButtons[i].classList.add('challenge-projects__tab--active');
     } else {
-      tabsContents[i].style.display = 'none';
+      tabsBoxes[i].style.display = 'none';
     }
   }
 }
