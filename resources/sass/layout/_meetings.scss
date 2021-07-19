@@ -1,17 +1,169 @@
 .challenge-meetings {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #eef2f7;
+	position: relative;
 }
 
 .challenge-meetings__title {
-    display: flex;
-    align-items: center;
-    font-size: 2.5rem;
+	font-size: 1.5rem;
     color: #0b3a42;
     margin-bottom: 1rem;
 
     svg {
         margin-inline-end: 1rem;
     }
+}
+
+.challenge-meetings__text {
+	font-size: .875rem;
+	color: #155a6d;
+}
+
+.challenge-meetings__wrap {
+    max-width: 85%;
+    margin: auto;
+}
+
+.challenge-meetings__tabs {
+    display: flex;
+    justify-content: space-between;
+    // padding-top: 1.5rem;
+	margin-top: 1.5rem;
+    color: #697d9a;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.challenge-meetings__tab {
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #d4dfee;
+    border-radius: 12px;
+    padding: 8px 15px;
+    margin-left: 16px;
+    min-width: 166px;
+    text-align: center;
+}
+
+.challenge-meetings__tab--active {
+    background-color: #20c5ba;
+    color: #fff;
+}
+
+.challenge-meetings__separator-line {
+	border-bottom: 2px solid #dee5ef;
+	position: absolute;
+	top: 334px;
+	right: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+}
+
+.challenge-meetings__box {
+    padding: 32px 32px 32px 24px;
+	border: 2px solid #20c5ba;
+	border-radius: 16px;
+	margin-top: 24px;
+	display: none;
+	background-color: $white;
+}
+
+.challenge-meetings__box--active {
+	display: block;
+}
+
+.challenge-meetings__box-title {
+	font-size: 20px;
+	color: #20c5ba;
+	font-weight: 600;
+}
+
+.challenge-meetings__box-title--secondary {
+	color: #20c5ba;
+	font-size: 18px;
+	padding-top: 18px;
+}
+
+.challenge-meetings__box-text {
+	color: #697d9a;
+	font-size: 18px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 0;
+}
+
+@media (min-width:576px) {
+	.challenge-meetings {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	.challenge-meetings__title {
+		font-size: 2.5rem;
+	}
+
+	.challenge-meetings__text {
+		font-size: 1.125rem;
+	}
+}
+
+@media (min-width:992px) {
+	.challenge-meetings__separator-line {
+		display: block;
+	}
+
+	.challenge-meetings__tabs {
+		color: #9db0cb;
+		overflow: initial;
+		margin-top: 3.5rem;
+	}
+
+	.challenge-meetings__tab {
+		font-size: 1.125rem;
+		background-color: transparent;
+		padding: 0;
+		margin-left: 0;
+		min-width: unset;
+		text-align: unset;
+	}
+
+	.challenge-meetings__tab--active {
+		color: #042623;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			right: 0;
+			height: 2px;
+			width: 100%;
+			background-color: #20c5ba;
+			z-index: 99;
+		}
+	}
+
+	.challenge-meetings__box {
+		padding: 40px;
+		position: relative;
+		margin-top: 45px;
+
+		&::before {
+			// content: url("../images/culture/structure/triangle.svg");
+			top: -15px;
+			right: 40px;
+			position: absolute;
+		}
+	}
+
+	.challenge-meetings__box-title {
+		font-size: 24px;
+		color: #0e7571;
+	}
+
+	.challenge-meetings__box-title--secondary {
+		color: #20c5ba;
+	}
 }
