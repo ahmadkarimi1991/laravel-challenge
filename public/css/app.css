@@ -174,8 +174,8 @@ a {
 }
 .challenge-projects {
   background-color: #f5f7fa;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .challenge-projects__title,
@@ -221,7 +221,16 @@ a {
   display: none;
 }
 
+.challenge-projects__boxes {
+  margin-top: 1.5rem;
+}
+
 @media (min-width: 992px) {
+  .challenge-projects {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .challenge-projects__title,
 .challenge-projects__text {
     text-align: center;
@@ -352,11 +361,14 @@ a {
   display: none;
 }
 
+.challenge-meetings__boxes {
+  margin-top: 1.5rem;
+}
+
 .challenge-meetings__box {
   padding: 32px 32px 32px 24px;
   border: 2px solid #20c5ba;
   border-radius: 16px;
-  margin-top: 24px;
   display: none;
   background-color: #fff;
 }
