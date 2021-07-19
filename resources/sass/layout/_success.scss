@@ -4,7 +4,32 @@
 }
 
 .challenge-success__title {
-    font-size: 2.5rem;
-    margin-bottom: 0;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
     text-align: center;
+}
+
+.challenge-success__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.challenge-success__item {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .challenge-success__title {
+        font-size: 2.5rem;
+    }
+
+    .challenge-success__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .challenge-success__item-img {
+        height: 4rem;
+    }
 }
