@@ -1,6 +1,12 @@
 .challenge-form {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    background-color: $white;
+}
+
+.challenge-form__wrap {
+    max-width: 85%;
+    margin: auto;
 }
 
 .challenge-form__title {
@@ -10,5 +16,122 @@
 
 .challenge-form__text {
     font-size: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.challenge-form__group {
+    background-color: #f5f7fa;
+    padding: 1.875rem 2.5rem;
+    border-radius: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+.challenge-form__group-title {
+    font-size: 1.5rem;
+    color: #155a6d;
+    position: relative;
+    right: -2.5rem;
+    margin-bottom: .75rem;
+    padding-right: 1rem;
+
+    &::before {
+        content: "";
+        background-color: #20c5ba;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: .25rem;
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+    }
+}
+
+.challenge-form__group-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.25rem;
+}
+
+.challenge-form__field-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        width: calc(100% - 80px);
+    }
+}
+
+.challenge-form__label {
+	color: #585858;
+	position: relative;
+	padding-left: .875rem;
+	font-size: 1rem;
+
+    &.challenge-form__label--required::before {
+        content: "*";
+        color: #20c5ba;
+        font-size: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.challenge-form__input {
+    background-color: $white;
+    border: 1px solid #dbe4f2;
+    height: 2.5rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    border-radius: .75rem;
+    line-height: 1.625;
+
+    &:focus {
+        outline: none;
+        border: 1px solid #dbe4f2;
+    }
+
+    &::placeholder {
+        color: #9db0cb;
+        text-align: right;
+    }
+
+    &.challenge-form__input--ltr {
+        direction: ltr;
+        text-align: left;
+    }
+}
+
+.challenge-form__button-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.challenge-form__message {
+    color: #22c5ba;
+
+    &::before {
+        content: "*";
+        position: relative;
+        top: 5px;
+        margin-inline-end: .5rem;
+    }
+}
+
+.challenge-form__button-submit {
+    background-color: #1fc5b9;
+    color: $white;
+    font-size: 1rem;
+    border-radius: .75rem;
+    text-align: center;
+    padding: .5rem;
+    border: none;
+
+    &.challenge-form__button-submit--disable {
+        background-color: #eef2f7;
+        color: #9db0cb;
+    }
 }
