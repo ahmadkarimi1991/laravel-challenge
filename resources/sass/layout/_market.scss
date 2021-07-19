@@ -10,13 +10,15 @@
 }
 
 .challenge-market__title {
-    font-size: 2.5rem;
+    font-size: 25px;
     margin-bottom: 1rem;
+    color: #0b3a42;
 }
 
 .challenge-market__text {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-bottom: 3rem;
+    color: #155a6d;
 }
 
 .challenge-market__items {
@@ -66,7 +68,6 @@
     font-size: 19px;
     color: #20c5ba;
     border: 2px solid currentColor;
-    max-width: 250px;
     text-align: center;
     border-radius: 6px;
     padding-top: 12px;
@@ -76,5 +77,24 @@
 
     &:hover {
         color: #009e93;
+    }
+}
+
+@media (min-width: 992px) {
+    .challenge-market__title {
+        font-size: 2.5rem;
+    }
+
+    .challenge-market__text {
+        font-size: 18px;
+    }
+
+    .challenge-market__item-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .challenge-market__more-btn {
+        max-width: 250px;
     }
 }
