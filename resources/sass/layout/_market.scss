@@ -1,6 +1,6 @@
 .challenge-market {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #f5f7fa;
 }
 
@@ -27,31 +27,37 @@
 
 .challenge-market__item {
     display: flex;
-    flex-basis: 250px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 90%;
+    margin: 1rem .5rem 0;
+    background-color: $white;
     border: 2px solid #cff2f2;
-    border-radius: .625rem;
-    background-color: $color-white;
+    border-radius: 10px;
     aspect-ratio: 1 / 1;
+    text-align: center;
+    transition: border .2s;
     overflow: hidden;
-    margin: 1rem;
+    max-width: 250px;
 
     &:hover {
         border-color: #00baba;
     }
 }
 
+.challenge-market__item-img {
+    height: 85px;
+}
+
 .challenge-market__item-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #0b3a42;
     margin-top: 1rem;
 }
 
 .challenge-market__item-subtitle {
-    font-size: 19px;
+    font-size: 1.25rem;
     color: #20c5ba;
 }
 
