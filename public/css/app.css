@@ -180,16 +180,17 @@ a {
 
 .challenge-projects__title,
 .challenge-projects__text {
-  text-align: center;
+  text-align: right;
 }
 
 .challenge-projects__title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  color: #0b3a42;
   margin-bottom: 1rem;
 }
 
 .challenge-projects__text {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   margin-bottom: 2.875rem;
 }
 
@@ -221,6 +222,19 @@ a {
 }
 
 @media (min-width: 992px) {
+  .challenge-projects__title,
+.challenge-projects__text {
+    text-align: center;
+  }
+
+  .challenge-projects__title {
+    font-size: 2.5rem;
+  }
+
+  .challenge-projects__text {
+    font-size: 1.125rem;
+  }
+
   .challenge-projects__tab {
     height: 61px;
     padding: 0 3rem;
