@@ -231,6 +231,10 @@ a {
   bottom: -11px;
   left: -12px;
 }
+.challenge-projects__tab svg {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
 
 .challenge-projects__boxes {
   position: relative;
