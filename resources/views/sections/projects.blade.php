@@ -3,7 +3,7 @@
         <h2 class="challenge-projects__title">فهرست پروژه‌ها</h2>
         <div class="challenge-projects__text">با فهرست پروژه‌های در جریان ابر آروان بیش‌تر آشنا شوید</div>
         <div class="challenge-projects__tabs">
-            <div class="challenge-projects__tabs-wrapper">
+            <div class="challenge-projects__tabs-wrap">
                 <a href="#tab-1" class="challenge-projects__tab">پروژه‌های فعال</a>
                 <a href="#tab-2" class="challenge-projects__tab">در حال ارزیابی</a>
                 <a href="#tab-3" class="challenge-projects__tab">پروژه‌های اجرا شده</a>
