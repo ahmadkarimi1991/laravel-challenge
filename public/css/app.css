@@ -39,6 +39,7 @@ a {
 .challenge-intro {
   background-color: #1fc5b9;
   padding-top: 3.5rem;
+  display: none;
 }
 
 .challenge-intro__content {
@@ -166,6 +167,11 @@ a {
   opacity: 0.75;
 }
 
+@media (min-width: 992px) {
+  .challenge-intro {
+    display: block;
+  }
+}
 .challenge-projects {
   background-color: #f5f7fa;
   padding-top: 8rem;
