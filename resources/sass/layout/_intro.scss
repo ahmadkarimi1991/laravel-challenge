@@ -18,8 +18,8 @@
 
 .header {
     background-color: inherit;
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    // top: 0;
     padding: .5rem;
 }
 
@@ -91,6 +91,12 @@
     }
 }
 
+.header-bar__language {
+    svg {
+        margin-right: .5rem;
+    }
+}
+
 .header-bar__item-tel {
     display: flex;
     justify-content: center;
@@ -104,5 +110,30 @@
 
     &:hover {
         color: $color-white;
+    }
+}
+
+.challenge-intro__wrap {
+    position: relative;
+    height: 120px;
+}
+
+.challenge-intro__city {
+	background-image: url("../../../public/images/city.svg");
+	background-position: bottom;
+	background-repeat: repeat-x;
+    background-size: 35%;
+	position: absolute;
+    width: 100%;
+	height: inherit;
+    top: 0;
+	bottom: 0;
+	right: 0;
+    left: 0;
+	z-index: 0;
+
+    &.challenge-intro__city--back {
+        background-image: url("../../../public/images/city-back.svg");
+        opacity: .75;
     }
 }
