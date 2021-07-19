@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 3.875rem;
+    height: 61px;
     padding: 0 3rem;
     background-color: $white;
     background-color: #e7ecf4;
@@ -36,9 +36,20 @@
     border-top-left-radius: 1rem;
     color: #033432;
     cursor: pointer;
+    position: relative;
 
     &:not(:first-of-type) {
         margin-inline-start: 1.625rem;
+
+        &.challenge-projects__tab--active {
+            &::before {
+                content: url("../../../public/images/tab-corner.svg");
+                position: absolute;
+                bottom: -11px;
+                right: -12px;
+                transform: scaleX(-1);
+            }
+        }
     }
 
     &:hover {
@@ -47,9 +58,21 @@
 
     &.challenge-projects__tab--active {
         background-color: $white;
-        box-shadow: 0 -3px 3px -3px rgba($color: #1abbb0, $alpha: 0.2), 3px 0 3px -3px rgba($color: #1abbb0, $alpha: 0.2), -3px 0 3px -3px rgba($color: #1abbb0, $alpha: 0.2);
+        box-shadow: -10px 9px 16px 0px rgb(26 187 176 / 20%);
         color: #6a7d9b;
+
+        &::after {
+            content: url("../../../public/images/tab-corner.svg");
+            position: absolute;
+            bottom: -11px;
+            left: -12px;
+        }
     }
+}
+
+.challenge-projects__boxes {
+    position: relative;
+    z-index: 99;
 }
 
 .challenge-projects__box {
