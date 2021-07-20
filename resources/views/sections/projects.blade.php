@@ -46,9 +46,45 @@
                 </div>
             </div>
             <div class="challenge-projects__boxes">
-                <div id="tab-1" class="challenge-projects__box challenge-projects__box--active">1</div>
-                <div id="tab-2" class="challenge-projects__box">2</div>
-                <div id="tab-3" class="challenge-projects__box">3</div>
+                <div class="challenge-projects__box challenge-projects__box--active">
+                    <div class="challenge-projects__item">
+                        <div class="challenge-projects__item-title">
+                            <div class="challenge-projects__item-title-text">Wordpress</div>
+                            <div class="challenge-projects__item-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10.828" height="6.414" viewBox="0 0 10.828 6.414">
+                                    <path id="Path_133745" data-name="Path 133745" d="M449.045,2455.419l-3.972,4-4.027-4" transform="translate(-439.631 -2454.005)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="challenge-projects__item-content">Content</div>
+                    </div>
+
+                    <div class="challenge-projects__item challenge-projects__item--active">
+                        <div class="challenge-projects__item-title">
+                            <div class="challenge-projects__item-title-text">Drupal Plugin</div>
+                            <div class="challenge-projects__item-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10.828" height="6.414" viewBox="0 0 10.828 6.414">
+                                    <path id="Path_133745" data-name="Path 133745" d="M449.045,2455.419l-3.972,4-4.027-4" transform="translate(-439.631 -2454.005)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="challenge-projects__item-content">Content</div>
+                    </div>
+
+                    <div class="challenge-projects__item">
+                        <div class="challenge-projects__item-title">
+                            <div class="challenge-projects__item-title-text">Migrate From Cloudflare to</div>
+                            <div class="challenge-projects__item-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10.828" height="6.414" viewBox="0 0 10.828 6.414">
+                                    <path id="Path_133745" data-name="Path 133745" d="M449.045,2455.419l-3.972,4-4.027-4" transform="translate(-439.631 -2454.005)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="challenge-projects__item-content">Content</div>
+                    </div>
+                </div>
+                <div class="challenge-projects__box">2</div>
+                <div class="challenge-projects__box">3</div>
             </div>
         </div>
     </div>

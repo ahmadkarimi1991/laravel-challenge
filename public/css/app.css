@@ -225,6 +225,81 @@ a {
   margin-top: 1.5rem;
 }
 
+.challenge-projects__item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.challenge-projects__item-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: #e7ecf4;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.challenge-projects__item-title-text {
+  font-size: 18px;
+  color: #4d4d4d;
+}
+.challenge-projects__item-title-text::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #20c5ba;
+  border-radius: 9999px;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
+.challenge-projects__item-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: #e7ecf4;
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  color: #9db0cb;
+  transition: 0.2s;
+}
+.challenge-projects__item-toggle svg {
+  stroke: currentColor;
+}
+
+.challenge-projects__item-content {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: none;
+}
+
+.challenge-projects__item--active {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 2px solid #20c5ba;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.challenge-projects__item--active .challenge-projects__item-title {
+  background-color: transparent;
+}
+.challenge-projects__item--active .challenge-projects__item-toggle {
+  background-color: #20c5ba;
+  color: #fff;
+  transform: rotate(180deg);
+}
+.challenge-projects__item--active .challenge-projects__item-content {
+  display: block;
+}
+
 @media (min-width: 992px) {
   .challenge-projects {
     padding-top: 8rem;
@@ -297,6 +372,10 @@ a {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     padding: 3.5rem 6.75rem;
+  }
+
+  .challenge-projects__item-title {
+    background-color: transparent;
   }
 }
 .challenge-meetings {
@@ -691,7 +770,6 @@ a {
 }
 .challenge-form__textarea:focus {
   outline: none;
-  border: none;
 }
 
 .challenge-form__button-wrap {
