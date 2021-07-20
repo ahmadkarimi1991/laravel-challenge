@@ -1,6 +1,34 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/js/accordion.js":
+/*!***********************************!*\
+  !*** ./resources/js/accordion.js ***!
+  \***********************************/
+/***/ (() => {
+
+var acc = document.querySelectorAll('.challenge-projects__item');
+acc.forEach(function (element) {
+  element.addEventListener('click', function (event) {
+    if (event.target.className === 'challenge-projects__item-title') {
+      if (element.classList.contains('challenge-projects__item--active')) {
+        element.classList.remove('challenge-projects__item--active');
+      } else {
+        var thereIsAnActiveItem = document.querySelector('.challenge-projects__item--active') !== null;
+
+        if (thereIsAnActiveItem) {
+          var activeItem = document.querySelector('.challenge-projects__item--active');
+          activeItem.classList.remove('challenge-projects__item--active');
+        }
+
+        element.classList.add('challenge-projects__item--active');
+      }
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -11,6 +39,8 @@
 __webpack_require__(/*! ./projects */ "./resources/js/projects.js");
 
 __webpack_require__(/*! ./select */ "./resources/js/select.js");
+
+__webpack_require__(/*! ./accordion */ "./resources/js/accordion.js");
 
 /***/ }),
 
