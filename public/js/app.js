@@ -44,6 +44,47 @@ __webpack_require__(/*! ./select */ "./resources/js/select.js");
 
 __webpack_require__(/*! ./accordion */ "./resources/js/accordion.js");
 
+__webpack_require__(/*! ./meeting */ "./resources/js/meeting.js");
+
+/***/ }),
+
+/***/ "./resources/js/meeting.js":
+/*!*********************************!*\
+  !*** ./resources/js/meeting.js ***!
+  \*********************************/
+/***/ (() => {
+
+var meetingTabs = document.querySelector(".challenge-meetings__tabs");
+var meetingTabsButtons = meetingTabs.querySelectorAll(".challenge-meetings__tab");
+var meetingBoxes = document.querySelector(".challenge-meetings__boxes");
+var meetingTabsBoxes = meetingBoxes.querySelectorAll(".challenge-meetings__box");
+
+function displayMeetingTab(current) {
+  for (var i = 0; i < meetingTabsBoxes.length; i++) {
+    if (current === i) {
+      meetingTabsBoxes[i].style.display = "block";
+      meetingTabsButtons.forEach(function (element) {
+        element.classList.remove("challenge-meetings__tab--active");
+      });
+      meetingTabsButtons[i].classList.add("challenge-meetings__tab--active");
+    } else {
+      meetingTabsBoxes[i].style.display = "none";
+    }
+  }
+}
+
+displayMeetingTab(0);
+meetingTabs.addEventListener("click", function (event) {
+  if (event.target.className === "challenge-meetings__tab") {
+    for (var i = 0; i < meetingTabsButtons.length; i++) {
+      if (event.target === meetingTabsButtons[i]) {
+        displayMeetingTab(i);
+        break;
+      }
+    }
+  }
+});
+
 /***/ }),
 
 /***/ "./resources/js/projects.js":
