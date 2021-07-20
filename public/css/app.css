@@ -225,11 +225,13 @@ a {
   margin-top: 1.5rem;
 }
 
+.challenge-projects__separator {
+  border-bottom: 1px solid #d8e1ef;
+  display: none;
+}
+
 .challenge-projects__item {
   transition: all 0.2s;
-}
-.challenge-projects__item:not(:last-of-type) {
-  margin-bottom: 1rem;
 }
 
 .challenge-projects__item-title {
@@ -302,6 +304,7 @@ a {
   border: 2px solid #20c5ba;
   border-radius: 1rem;
   background-color: #fff;
+  transform: scale(1.025);
 }
 .challenge-projects__item--active .challenge-projects__item-title {
   background-color: transparent;
@@ -388,6 +391,14 @@ a {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     padding: 3.5rem 6.75rem;
+  }
+
+  .challenge-projects__separator {
+    display: block;
+  }
+
+  .challenge-projects__item {
+    margin-bottom: 0;
   }
 
   .challenge-projects__item-title {

@@ -59,6 +59,8 @@
                         <div class="challenge-projects__item-content">Content</div>
                     </div>
 
+                    <div class="challenge-projects__separator"></div>
+
                     <div class="challenge-projects__item">
                         <div class="challenge-projects__item-title">
                             <div class="challenge-projects__item-title-text">Drupal Plugin</div>
@@ -70,6 +72,8 @@
                         </div>
                         <div class="challenge-projects__item-content">Content</div>
                     </div>
+
+                    <div class="challenge-projects__separator"></div>
 
                     <div class="challenge-projects__item">
                         <div class="challenge-projects__item-title">
