@@ -70,28 +70,34 @@
                 <div class="challenge-form__group-title">توضیحات تکمیلی</div>
                 <div class="challenge-form__group-wrap">
                     <div class="challenge-form__field">
-                        <div class="challenge-form__field-wrap">
+                        <div class="challenge-form__field-wrap challenge-form__field-wrap-select">
                             <label for="type" class="challenge-form__label">نوع ابریار</label>
-                            <select name="type" id="type">
-                                <option value="">ابریار کوچ ابری</option>
-                                <option value="">ابریار فنی</option>
-                                <option value="">ابریار بازارچه</option>
-                                <option value="">ابریار آموزش</option>
-                                <option value="">ابریار فروش</option>
-                            </select>
+                            <div class="challenge-form__select">
+                                <select name="type" id="type">
+                                    <option value="">انتخاب کنید</option>
+                                    <option value="">ابریار کوچ ابری</option>
+                                    <option value="">ابریار فنی</option>
+                                    <option value="">ابریار بازارچه</option>
+                                    <option value="">ابریار آموزش</option>
+                                    <option value="">ابریار فروش</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="challenge-form__field-hint"></div>
                     </div>
 
                     <div class="challenge-form__field">
-                        <div class="challenge-form__field-wrap">
+                        <div class="challenge-form__field-wrap challenge-form__field-wrap-select">
                             <label for="level" class="challenge-form__label">سطح ابریار</label>
-                            <select name="level" id="level">
-                                <option value="">سطح ۱</option>
-                                <option value="">سطح ۲</option>
-                                <option value="">سطح</option>
-                                <option value="">سطح ۴</option>
-                            </select>
+                            <div class="challenge-form__select">
+                                <select name="level" id="level">
+                                    <option value="">انتخاب کنید</option>
+                                    <option value="">سطح ۱</option>
+                                    <option value="">سطح ۲</option>
+                                    <option value="">سطح ۳</option>
+                                    <option value="">سطح ۴</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="challenge-form__field-hint"></div>
                     </div>

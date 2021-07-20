@@ -288,6 +288,7 @@ a {
   .challenge-projects__boxes {
     position: relative;
     z-index: 99;
+    margin-top: 0;
   }
 
   .challenge-projects__box {
@@ -534,6 +535,10 @@ a {
 .challenge-form__field-wrap input {
   width: calc(100% - 80px);
 }
+.challenge-form__field-wrap.challenge-form__field-wrap-select {
+  border: none;
+  padding: 0;
+}
 
 .challenge-form__label {
   color: #585858;
@@ -607,6 +612,76 @@ a {
   color: #9db0cb;
   border-radius: 0.75rem;
   border: 1px solid #dbe4f2;
+}
+
+.challenge-form__select {
+  position: relative;
+  width: calc(100% - 80px);
+}
+.challenge-form__select select {
+  display: none;
+}
+
+.challenge-form__select--selected {
+  background-color: #e7ecf4;
+  color: #697d9a;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.2s;
+}
+.challenge-form__select--selected::after {
+  position: absolute;
+  content: "";
+  top: 1.125rem;
+  left: 1rem;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #9db0cb transparent transparent transparent;
+}
+.challenge-form__select--selected.challenge-form__select--active::after {
+  border-color: transparent transparent #9db0cb transparent;
+  top: 10px;
+}
+
+.challenge-form__select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 2px solid #d5dde7;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.challenge-form__select-items div {
+  color: #697d9a;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0.75rem;
+}
+.challenge-form__select-items div:hover {
+  background-color: rgba(233, 237, 245, 0.5);
+  color: #00baba;
+}
+
+.challenge-form__select--hide {
+  display: none;
+}
+
+.challenge-form__select--same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .challenge-form__textarea {
@@ -694,6 +769,12 @@ a {
     border-radius: 0.75rem;
   }
   .challenge-form__input:focus {
+    border: 1px solid #dbe4f2;
+  }
+
+  .challenge-form__input-file-name {
+    background-color: #fff;
+    border-radius: 0.75rem;
     border: 1px solid #dbe4f2;
   }
 

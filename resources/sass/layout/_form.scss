@@ -66,6 +66,11 @@
     input {
         width: calc(100% - 80px);
     }
+
+    &.challenge-form__field-wrap-select {
+        border: none;
+        padding: 0;
+    }
 }
 
 .challenge-form__label {
@@ -137,6 +142,77 @@
     color: #9db0cb;
     border-radius: .75rem;
     border: 1px solid #dbe4f2;
+}
+
+.challenge-form__select {
+    position: relative;
+    width: calc(100% - 80px);
+
+    select {
+        display: none;
+    }
+}
+
+.challenge-form__select--selected {
+    background-color: #e7ecf4;
+    color: #697d9a;
+    border-radius: .75rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 1.125rem;
+        left: 1rem;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #9db0cb transparent transparent transparent;
+    }
+
+    &.challenge-form__select--active {
+        &::after {
+            border-color: transparent transparent #9db0cb transparent;
+            top: 10px;
+        }
+    }
+}
+
+.challenge-form__select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 2px solid #d5dde7;
+    border-radius: .75rem;
+    overflow: hidden;
+
+    div {
+        color: #697d9a;
+        margin: .5rem;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        user-select: none;
+        border-radius: .75rem;
+
+        &:hover {
+            background-color: rgba($color: #e9edf5, $alpha: 0.5);
+            color: #00baba;
+        }
+    }
+}
+
+.challenge-form__select--hide {
+    display: none;
+}
+
+.challenge-form__select--same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .challenge-form__textarea {
@@ -233,6 +309,12 @@
         &:focus {
             border: 1px solid #dbe4f2;
         }
+    }
+
+    .challenge-form__input-file-name {
+        background-color: $white;
+        border-radius: .75rem;
+        border: 1px solid #dbe4f2;
     }
 
     .challenge-form__textarea {
