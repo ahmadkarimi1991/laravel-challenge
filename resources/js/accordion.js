@@ -1,18 +1,23 @@
-const acc = document.querySelectorAll('.challenge-projects__item');
+const accordionItems = document.querySelectorAll('.challenge-projects__item');
+const accordionContentPanes = document.querySelectorAll('.challenge-projects__item-content');
 
-acc.forEach((element) => {
-    element.addEventListener('click', function(event) {
-        if (event.target.className === 'challenge-projects__item-title') {
-            if (element.classList.contains('challenge-projects__item--active')) {
-                element.classList.remove('challenge-projects__item--active');
-            } else {
-                let thereIsAnActiveItem = document.querySelector('.challenge-projects__item--active') !== null;
-                if (thereIsAnActiveItem) {
-                    let activeItem = document.querySelector('.challenge-projects__item--active');
-                    activeItem.classList.remove('challenge-projects__item--active');
-                }
-                element.classList.add('challenge-projects__item--active');
-            }
+// Show first by default
+accordionItems[0].classList.add('challenge-projects__item--active');
+
+// Hide each besides the targeted accordion on click
+accordionItems.forEach(function(accordion) {
+    // Clicked accordions clickable target
+    const accordionTitleRow = accordion.firstElementChild;
+    accordionTitleRow.addEventListener('click', toggleAccordion);
+});
+
+function toggleAccordion(e) {
+    accordionContentPanes.forEach(function(content) {
+        // Check if the clicked row matches the content's previous element sibling
+        if (content.previousElementSibling === e.target) {
+            content.parentElement.classList.add('challenge-projects__item--active');
+        } else {
+            content.parentElement.classList.remove('challenge-projects__item--active');
         }
     });
-});
+}

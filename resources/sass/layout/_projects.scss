@@ -53,6 +53,7 @@
 }
 
 .challenge-projects__item {
+    transition: all .2s;
     &:not(:last-of-type) {
         margin-bottom: 1rem;
     }
@@ -195,6 +196,7 @@
         }
 
         svg {
+            display: block;
             margin-inline-end: 1rem;
         }
     }

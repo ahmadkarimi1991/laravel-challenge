@@ -225,6 +225,9 @@ a {
   margin-top: 1.5rem;
 }
 
+.challenge-projects__item {
+  transition: all 0.2s;
+}
 .challenge-projects__item:not(:last-of-type) {
   margin-bottom: 1rem;
 }
@@ -356,6 +359,7 @@ a {
     left: -12px;
   }
   .challenge-projects__tab svg {
+    display: block;
     -webkit-margin-end: 1rem;
             margin-inline-end: 1rem;
   }
