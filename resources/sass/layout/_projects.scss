@@ -158,6 +158,36 @@
     }
 }
 
+.challenge-projects__projects-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.challenge-projects__project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f6f8fb;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.challenge-projects__project-img {
+    margin-bottom: 1rem;
+}
+
+.challenge-projects__project-title {
+    font-weight: bold;
+    color: #253343;
+}
+
+.challenge-projects__project-subtitle {
+    color: #6a7d9b;
+}
+
 @media (min-width: 992px) {
     .challenge-projects {
         padding-top: 8rem;
@@ -244,6 +274,7 @@
     }
 
     .challenge-projects__item {
+        padding: 1rem 0;
         &:not(:last-of-type) {
             margin-bottom: 0;
         }
@@ -251,5 +282,9 @@
 
     .challenge-projects__item-title {
         background-color: transparent;
+    }
+
+    .challenge-projects__projects-wrap {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
