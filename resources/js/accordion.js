@@ -2,7 +2,7 @@ const accordionItems = document.querySelectorAll('.challenge-projects__item');
 const accordionContentPanes = document.querySelectorAll('.challenge-projects__item-content');
 
 // Show first by default
-accordionItems[0].classList.add('challenge-projects__item--active');
+// accordionItems[0].classList.add('challenge-projects__item--active');
 
 // Hide each besides the targeted accordion on click
 accordionItems.forEach(function(accordion) {
