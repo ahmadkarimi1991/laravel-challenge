@@ -45,18 +45,22 @@
                 <div class="challenge-form__group-title">سوابق و تجربیات</div>
                 <div class="challenge-form__group-wrap">
                     <div class="challenge-form__field">
-                        <div class="challenge-form__field-wrap">
-                            <label for="resume" class="challenge-form__label challenge-form__label--required">رزومه</label>
-                            <input type="file" id="resume">
-                        </div>
+                        <label class="challenge-form__field-wrap">
+                            <span for="resume" class="challenge-form__label challenge-form__label--required">رزومه</span>
+                            <input type="file" id="resume" class="challenge-form__input-file">
+                            <div class="challenge-form__input-file-name"></div>
+                            <div class="challenge-form__input-file-type">انتخاب فایل pdf</div>
+                        </label>
                         <div class="challenge-form__field-hint"></div>
                     </div>
 
                     <div class="challenge-form__field">
-                        <div class="challenge-form__field-wrap">
-                            <label for="portfolio" class="challenge-form__label">پرتفولیو</label>
-                            <input type="file" id="portfolio">
-                        </div>
+                        <label class="challenge-form__field-wrap">
+                            <span for="portfolio" class="challenge-form__label">پرتفولیو</span>
+                            <input type="file" id="portfolio" class="challenge-form__input-file">
+                            <div class="challenge-form__input-file-name"></div>
+                            <div class="challenge-form__input-file-type">انتخاب فایل pdf</div>
+                        </label>
                         <div class="challenge-form__field-hint"></div>
                     </div>
                 </div>
