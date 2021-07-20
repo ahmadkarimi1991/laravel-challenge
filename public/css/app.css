@@ -220,6 +220,10 @@ a {
 .challenge-projects__tab svg {
   display: none;
 }
+.challenge-projects__tab.challenge-projects__tab--active {
+  background-color: #00baba;
+  color: #fff;
+}
 
 .challenge-projects__boxes {
   margin-top: 1.5rem;
@@ -232,6 +236,9 @@ a {
 
 .challenge-projects__item {
   transition: all 0.2s;
+}
+.challenge-projects__item:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 .challenge-projects__item-title {
@@ -397,7 +404,7 @@ a {
     display: block;
   }
 
-  .challenge-projects__item {
+  .challenge-projects__item:not(:last-of-type) {
     margin-bottom: 0;
   }
 
@@ -831,6 +838,19 @@ a {
   color: #9db0cb;
 }
 
+.challenge-form__notif {
+  text-align: center;
+  background-color: rgba(31, 197, 185, 0.05);
+  border: 1px solid #1fc5b9;
+  color: #1fc5b9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+}
+.challenge-form__notif.challenge-form__notif--hidden {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .challenge-form__group {
     padding: 1.875rem 2.5rem;
@@ -875,6 +895,38 @@ a {
   }
   .challenge-form__input:focus {
     border: 1px solid #dbe4f2;
+  }
+
+  .challenge-form__field--error .challenge-form__input {
+    border: 1px solid #f77d7d;
+  }
+  .challenge-form__field--error .challenge-form__input:focus {
+    border: 1px solid #f77d7d;
+  }
+  .challenge-form__field--error .challenge-form__input::-moz-placeholder {
+    color: #f77d7d;
+  }
+  .challenge-form__field--error .challenge-form__input:-ms-input-placeholder {
+    color: #f77d7d;
+  }
+  .challenge-form__field--error .challenge-form__input::placeholder {
+    color: #f77d7d;
+  }
+
+  .challenge-form__field--success .challenge-form__input {
+    border: 1px solid #20c4ba;
+  }
+  .challenge-form__field--success .challenge-form__input:focus {
+    border: 1px solid #20c4ba;
+  }
+  .challenge-form__field--success .challenge-form__input::-moz-placeholder {
+    color: #20c4ba;
+  }
+  .challenge-form__field--success .challenge-form__input:-ms-input-placeholder {
+    color: #20c4ba;
+  }
+  .challenge-form__field--success .challenge-form__input::placeholder {
+    color: #20c4ba;
   }
 
   .challenge-form__input-file-name {

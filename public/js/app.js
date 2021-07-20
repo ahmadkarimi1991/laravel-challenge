@@ -46,6 +46,93 @@ __webpack_require__(/*! ./accordion */ "./resources/js/accordion.js");
 
 __webpack_require__(/*! ./meeting */ "./resources/js/meeting.js");
 
+__webpack_require__(/*! ./form */ "./resources/js/form.js");
+
+/***/ }),
+
+/***/ "./resources/js/form.js":
+/*!******************************!*\
+  !*** ./resources/js/form.js ***!
+  \******************************/
+/***/ (() => {
+
+var docId = 'jLQsVfBqj4';
+var tableIdOrName = 'grid-F4qsM_bt7P';
+var token = '3974b4fb-0494-491e-b106-6d8689d287fc';
+var url = "https://coda.io/apis/v1/docs/".concat(docId, "/tables/").concat(tableIdOrName, "/rows");
+var form = document.getElementById('challenge-form');
+var fullname = document.getElementById('name');
+var phone = document.getElementById('phone');
+var email = document.getElementById('email');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  checkInputs();
+});
+
+function checkInputs() {
+  // get the values from the inputs
+  var fullnameValue = fullname.value.trim();
+  var phoneValue = phone.value.trim();
+  var emailValue = email.value.trim();
+
+  if (fullnameValue === '') {
+    setErrorFor(fullname, 'پر کردن فیلد نام ضروری است');
+  } else {
+    setSuccessFor(fullname);
+  }
+
+  if (phoneValue === '') {
+    setErrorFor(phone, 'پر کردن فیلد تلفن ضروری است');
+  } else {
+    setSuccessFor(phone);
+  }
+
+  if (emailValue === '') {
+    setErrorFor(email, 'پر کردن فیلد ایمیل ضروری است');
+  } else {
+    setSuccessFor(email);
+  }
+
+  var data = {
+    'rows': [{
+      'cells': [{
+        'column': 'name',
+        'value': fullnameValue
+      }, {
+        'column': 'phone',
+        'value': phoneValue
+      }, {
+        'column': 'email',
+        'value': emailValue
+      }]
+    }]
+  };
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': "Bearer ".concat(token)
+    },
+    body: JSON.stringify(data)
+  }).then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    console.log('Success: ', data); // document.querySelector('.challenge-form__notif').classList.remove('challenge-form__notif--hidden');
+  })["catch"](function (error) {
+    console.error('Error: ', error);
+  });
+}
+
+function setErrorFor(input, message) {
+  var fieldWrap = input.parentElement;
+  fieldWrap.classList.add('challenge-form__field--error');
+}
+
+function setSuccessFor(input, message) {
+  var fieldWrap = input.parentElement;
+  fieldWrap.classList.add('challenge-form__field--success');
+}
+
 /***/ }),
 
 /***/ "./resources/js/meeting.js":

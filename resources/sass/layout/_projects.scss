@@ -46,6 +46,11 @@
     svg {
         display: none;
     }
+
+    &.challenge-projects__tab--active {
+        background-color: #00baba;
+        color: $white;
+    }
 }
 
 .challenge-projects__boxes {
@@ -59,9 +64,9 @@
 
 .challenge-projects__item {
     transition: all .2s;
-    // &:not(:last-of-type) {
-    //     margin-bottom: 1rem;
-    // }
+    &:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
 }
 
 .challenge-projects__item-title {
@@ -239,7 +244,9 @@
     }
 
     .challenge-projects__item {
-        margin-bottom: 0;
+        &:not(:last-of-type) {
+            margin-bottom: 0;
+        }
     }
 
     .challenge-projects__item-title {

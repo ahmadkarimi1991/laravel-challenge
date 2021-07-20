@@ -260,6 +260,20 @@
     }
 }
 
+.challenge-form__notif {
+    text-align: center;
+    background-color: rgba($color: #1fc5b9, $alpha: 0.05);
+    border: 1px solid #1fc5b9;
+    color: #1fc5b9;
+    padding: 1rem;
+    border-radius: .75rem;
+    margin-top: 1rem;
+
+    &.challenge-form__notif--hidden {
+        display: none;
+    }
+}
+
 @media (min-width: 992px) {
     .challenge-form__group {
         padding: 1.875rem 2.5rem;
@@ -309,6 +323,46 @@
         &:focus {
             border: 1px solid #dbe4f2;
         }
+    }
+
+    .challenge-form__field--error {
+        .challenge-form__input {
+            border: 1px solid #f77d7d;
+
+            &:focus {
+                border: 1px solid #f77d7d;
+            }
+
+            &::placeholder {
+                color: #f77d7d;
+            }
+        }
+
+        // &~.challenge-form__field-hint {
+        //     color: #f77d7d;
+        //     direction: ltr;
+        //     margin-top: .5rem;
+        // }
+    }
+
+    .challenge-form__field--success {
+        .challenge-form__input {
+            border: 1px solid #20c4ba;
+
+            &:focus {
+                border: 1px solid #20c4ba;
+            }
+
+            &::placeholder {
+                color: #20c4ba;
+            }
+        }
+
+        // &~.challenge-form__field-hint {
+        //     color: #20c4ba;
+        //     direction: ltr;
+        //     margin-top: .5rem;
+        // }
     }
 
     .challenge-form__input-file-name {
