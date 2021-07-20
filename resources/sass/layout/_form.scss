@@ -81,6 +81,10 @@
         top: .125rem;
         right: .25rem;
     }
+
+    &.challenge-form__label--hidden-mobile {
+        display: none;
+    }
 }
 
 .challenge-form__input {
@@ -102,6 +106,17 @@
     &.challenge-form__input--ltr {
         direction: ltr;
         text-align: left;
+    }
+}
+
+.challenge-form__textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+
+    &:focus {
+        outline: none;
+        border: none;
     }
 }
 
@@ -154,6 +169,10 @@
         gap: 2.25rem;
     }
 
+    .challenge-form__field--full {
+        grid-column: span 2/span 2;
+    }
+
     .challenge-form__field-wrap {
         border: none;
         border-radius: 0;
@@ -162,6 +181,16 @@
 
         input {
             width: calc(100% - 80px);
+        }
+
+        &.challenge-form__field-wrap--textarea {
+            align-items: flex-start;
+        }
+    }
+
+    .challenge-form__label {
+        &.challenge-form__label--hidden-mobile {
+            display: block;
         }
     }
 
@@ -174,6 +203,14 @@
         &:focus {
             border: 1px solid #dbe4f2;
         }
+    }
+
+    .challenge-form__textarea {
+        background-color: $white;
+        border: 1px solid #dbe4f2;
+        border-radius: .75rem;
+        padding: 1rem 1.5rem;
+        width: calc(100% - 80px);
     }
 
     .challenge-form__button-wrap {

@@ -92,10 +92,10 @@
                         <div class="challenge-form__field-hint"></div>
                     </div>
 
-                    <div class="challenge-form__field" style="grid-row: span 2/span 2;">
-                        <div class="challenge-form__field-wrap">
-                            <label for="description" class="challenge-form__label">توضیحات</label>
-                            <textarea name="description" id="description" cols="30" rows="10" placeholder="در صورتی نیاز به توضیحات تکمیلی لطفا در این باکس برای ما یادداشت بگذارید"></textarea>
+                    <div class="challenge-form__field challenge-form__field--full">
+                        <div class="challenge-form__field-wrap challenge-form__field-wrap--textarea">
+                            <label for="description" class="challenge-form__label challenge-form__label--hidden-mobile">توضیحات</label>
+                            <textarea name="description" id="description" class="challenge-form__textarea" cols="30" rows="10" placeholder="در صورتی نیاز به توضیحات تکمیلی لطفا در این باکس برای ما یادداشت بگذارید"></textarea>
                         </div>
                         <div class="challenge-form__field-hint"></div>
                     </div>
