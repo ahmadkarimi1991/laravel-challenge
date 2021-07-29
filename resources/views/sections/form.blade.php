@@ -4,7 +4,7 @@
             <h2 class="challenge-form__title">فرم ثبت نام شبکه ابریارهای آروان</h2>
             <p class="challenge-form__text">در صورتی که مایل باشید می‌توانید از برای ما رزومه بفرستید، لطفا فرم زیر را پر کنید.</p>
 
-            <form id="challenge-form">
+            <form id="challenge-form" method="POST">
                 <div class="challenge-form__group">
                     <div class="challenge-form__group-title">اطلاعات فردی</div>
                     <div class="challenge-form__group-wrap">
@@ -76,11 +76,11 @@
                                 <div class="challenge-form__select">
                                     <select name="type" id="type">
                                         <option value="">انتخاب کنید</option>
-                                        <option value="">ابریار کوچ ابری</option>
-                                        <option value="">ابریار فنی</option>
-                                        <option value="">ابریار بازارچه</option>
-                                        <option value="">ابریار آموزش</option>
-                                        <option value="">ابریار فروش</option>
+                                        <option value="1">ابریار کوچ ابری</option>
+                                        <option value="2">ابریار فنی</option>
+                                        <option value="3">ابریار بازارچه</option>
+                                        <option value="4">ابریار آموزش</option>
+                                        <option value="5">ابریار فروش</option>
                                     </select>
                                 </div>
                             </div>
@@ -93,10 +93,10 @@
                                 <div class="challenge-form__select">
                                     <select name="level" id="level">
                                         <option value="">انتخاب کنید</option>
-                                        <option value="">سطح ۱</option>
-                                        <option value="">سطح ۲</option>
-                                        <option value="">سطح ۳</option>
-                                        <option value="">سطح ۴</option>
+                                        <option value="1">سطح ۱</option>
+                                        <option value="2">سطح ۲</option>
+                                        <option value="3">سطح ۳</option>
+                                        <option value="4">سطح ۴</option>
                                     </select>
                                 </div>
                             </div>
@@ -120,7 +120,8 @@
                 <div class="challenge-form__button-wrap">
                     <div class="challenge-form__message">پر کردن فیلدهایی که با ستاره مشخص شده ضروری است</div>
 
-                    <button type="submit" class="challenge-form__button-submit">ثبت نام</button>
+                    {{-- <button type="submit" class="">ثبت نام</button> --}}
+                    <input type="submit" value="ثبت نام" class="challenge-form__button-submit">
                 </div>
 
                 <div class="challenge-form__notif challenge-form__notif--hidden">داده‌ها با موفقیت ثبت شدند</div>

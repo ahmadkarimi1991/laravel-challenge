@@ -235,7 +235,7 @@ a {
 }
 
 .challenge-projects__item {
-  transition: all 0.2s;
+  transition: transform 0.3s;
 }
 .challenge-projects__item:not(:last-of-type) {
   margin-bottom: 1rem;

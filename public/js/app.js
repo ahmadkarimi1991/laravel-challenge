@@ -60,12 +60,16 @@ var docId = 'jLQsVfBqj4';
 var tableIdOrName = 'grid-F4qsM_bt7P';
 var token = '3974b4fb-0494-491e-b106-6d8689d287fc';
 var url = "https://coda.io/apis/v1/docs/".concat(docId, "/tables/").concat(tableIdOrName, "/rows");
-var form = document.getElementById('challenge-form');
-var fullname = document.getElementById('name');
-var phone = document.getElementById('phone');
-var email = document.getElementById('email');
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
+var myForm = document.querySelector('#challenge-form');
+var fullname = document.querySelector('#name');
+var phone = document.querySelector('#phone');
+var email = document.querySelector('#email');
+var companyName = document.querySelector('#companyName');
+var type = document.querySelector('#type');
+var level = document.querySelector('#level');
+var desc = document.querySelector('#description');
+myForm.addEventListener('submit', function (event) {
+  event.preventDefault();
   checkInputs();
 });
 
@@ -74,23 +78,59 @@ function checkInputs() {
   var fullnameValue = fullname.value.trim();
   var phoneValue = phone.value.trim();
   var emailValue = email.value.trim();
+  var companyNameValue = companyName.value.trim();
+  var typeValue = type.value.trim();
+  var levelValue = level.value.trim();
+  var descValue = desc.value.trim();
+  var itsOkToFetch = true;
 
   if (fullnameValue === '') {
+    itsOkToFetch = false;
     setErrorFor(fullname, 'پر کردن فیلد نام ضروری است');
   } else {
     setSuccessFor(fullname);
   }
 
   if (phoneValue === '') {
+    itsOkToFetch = false;
     setErrorFor(phone, 'پر کردن فیلد تلفن ضروری است');
   } else {
     setSuccessFor(phone);
   }
 
   if (emailValue === '') {
+    itsOkToFetch = false;
     setErrorFor(email, 'پر کردن فیلد ایمیل ضروری است');
   } else {
     setSuccessFor(email);
+  }
+
+  if (companyNameValue === '') {
+    itsOkToFetch = false;
+    setErrorFor(companyName, 'پر کردن فیلد ایمیل ضروری است');
+  } else {
+    setSuccessFor(companyName);
+  }
+
+  if (typeValue === '') {
+    itsOkToFetch = false;
+    setErrorFor(type, 'پر کردن فیلد ایمیل ضروری است');
+  } else {
+    setSuccessFor(type);
+  }
+
+  if (levelValue === '') {
+    itsOkToFetch = false;
+    setErrorFor(level, 'پر کردن فیلد ایمیل ضروری است');
+  } else {
+    setSuccessFor(level);
+  }
+
+  if (descValue === '') {
+    itsOkToFetch = false;
+    setErrorFor(desc, 'پر کردن فیلد ایمیل ضروری است');
+  } else {
+    setSuccessFor(desc);
   }
 
   var data = {
@@ -104,23 +144,38 @@ function checkInputs() {
       }, {
         'column': 'email',
         'value': emailValue
+      }, {
+        'column': 'company',
+        'value': companyNameValue
+      }, {
+        'column': 'type',
+        'value': typeValue
+      }, {
+        'column': 'level',
+        'value': levelValue
+      }, {
+        'column': 'desc',
+        'value': descValue
       }]
     }]
   };
-  fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': "Bearer ".concat(token)
-    },
-    body: JSON.stringify(data)
-  }).then(function (response) {
-    return response.json();
-  }).then(function (data) {
-    console.log('Success: ', data); // document.querySelector('.challenge-form__notif').classList.remove('challenge-form__notif--hidden');
-  })["catch"](function (error) {
-    console.error('Error: ', error);
-  });
+
+  if (itsOkToFetch) {
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': "Bearer ".concat(token)
+      },
+      body: JSON.stringify(data)
+    }).then(function (response) {
+      return response.json();
+    }).then(function (data) {
+      console.log('Success: ', data); // document.querySelector('.challenge-form__notif').classList.remove('challenge-form__notif--hidden');
+    })["catch"](function (error) {
+      console.error('Error: ', error);
+    });
+  }
 }
 
 function setErrorFor(input, message) {

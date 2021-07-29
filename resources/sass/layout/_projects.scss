@@ -63,7 +63,7 @@
 }
 
 .challenge-projects__item {
-    transition: all .2s;
+    transition: transform .3s;
     &:not(:last-of-type) {
         margin-bottom: 1rem;
     }
