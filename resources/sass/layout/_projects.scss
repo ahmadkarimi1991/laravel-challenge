@@ -162,6 +162,7 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .challenge-projects__project-content {
@@ -186,6 +187,63 @@
 
 .challenge-projects__project-subtitle {
     color: #6a7d9b;
+}
+
+.challenge-projects__project-desc {
+    border: 1px solid #E7ECF4;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.challenge-projects__project-desc-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    svg {
+        margin-inline-end: 1rem;
+    }
+}
+
+.challenge-projects__project-desc-item {
+    font-size: 1rem;
+    color: #6A7D9B;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: .5rem;
+        height: .5rem;
+        background-color: #20C5BA;
+        border-radius: 50%;
+        margin-inline-end: .5rem;
+    }
+}
+
+.challenge-projects__project-github {
+    border: 1px solid #E7ECF4;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.challenge-projects__project-github-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    svg {
+        margin-inline-end: 1rem;
+    }
+}
+
+.challenge-projects__project-github-content {
+    font-size: .875rem;
+    color: #6A7D9B;
 }
 
 @media (min-width: 992px) {

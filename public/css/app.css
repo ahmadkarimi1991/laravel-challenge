@@ -329,6 +329,7 @@ a {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .challenge-projects__project-content {
@@ -353,6 +354,63 @@ a {
 
 .challenge-projects__project-subtitle {
   color: #6a7d9b;
+}
+
+.challenge-projects__project-desc {
+  border: 1px solid #E7ECF4;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.challenge-projects__project-desc-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.challenge-projects__project-desc-title svg {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+.challenge-projects__project-desc-item {
+  font-size: 1rem;
+  color: #6A7D9B;
+}
+.challenge-projects__project-desc-item::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #20C5BA;
+  border-radius: 50%;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
+.challenge-projects__project-github {
+  border: 1px solid #E7ECF4;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.challenge-projects__project-github-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.challenge-projects__project-github-title svg {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+.challenge-projects__project-github-content {
+  font-size: 0.875rem;
+  color: #6A7D9B;
 }
 
 @media (min-width: 992px) {
@@ -390,7 +448,7 @@ a {
             margin-inline-start: 1.625rem;
   }
   .challenge-projects__tab:not(:first-of-type).challenge-projects__tab--active::before {
-    content: url(/images/tab-corner.svg?318a643c5b4815f1a2fe736d865d38f8);
+    content: url(/images/tab-corner.svg?73da17940a0739a6a845874768b0c723);
     position: absolute;
     bottom: -11px;
     right: -12px;
@@ -405,7 +463,7 @@ a {
     color: #6a7d9b;
   }
   .challenge-projects__tab.challenge-projects__tab--active::after {
-    content: url(/images/tab-corner.svg?318a643c5b4815f1a2fe736d865d38f8);
+    content: url(/images/tab-corner.svg?73da17940a0739a6a845874768b0c723);
     position: absolute;
     bottom: -11px;
     left: -12px;
@@ -603,7 +661,7 @@ a {
     margin-top: 45px;
   }
   .challenge-meetings__box::before {
-    content: url(/images/triangle.svg?f72de6f1af0a54047ae74ae5eeb0026b);
+    content: url(/images/triangle.svg?4bf199e7b2b2feae40a3851ef1893fa4);
     top: -15px;
     right: 40px;
     position: absolute;
