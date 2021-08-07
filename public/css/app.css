@@ -1170,9 +1170,13 @@ a {
   cursor: pointer;
   z-index: 9999;
   transition: 0.2s;
+  color: #fff;
 }
 .challenge-success__chevron:hover {
   background-color: #1ABBB0;
+}
+.challenge-success__chevron svg {
+  stroke: currentColor;
 }
 
 .challenge-success__chevron--right {
@@ -1181,6 +1185,9 @@ a {
 
 .challenge-success__chevron--left {
   left: 0;
+}
+.challenge-success__chevron--left svg {
+  transform: rotate(180deg);
 }
 
 .challenge-success__chevron--hide {

@@ -22,9 +22,14 @@
     cursor: pointer;
     z-index: 9999;
     transition: .2s;
+    color: #fff;
 
     &:hover {
         background-color: #1ABBB0;
+    }
+
+    svg {
+        stroke: currentColor;
     }
 }
 
@@ -34,6 +39,10 @@
 
 .challenge-success__chevron--left {
     left: 0;
+
+    svg {
+        transform: rotate(180deg);
+    }
 }
 
 .challenge-success__chevron--hide {
