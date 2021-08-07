@@ -4,3 +4,4 @@ require("./select");
 require("./accordion");
 require("./meeting");
 require("./form");
+require("./slider");
