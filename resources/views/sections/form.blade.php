@@ -13,7 +13,7 @@
                                 <label for="name" class="challenge-form__label challenge-form__label--required">نام</label>
                                 <input type="text" id="name" class="challenge-form__input" placeholder="نام و نام خانوادگی">
                             </div>
-                            <div class="challenge-form__field-hint"></div>
+                            {{-- <div class="challenge-form__field-hint"></div> --}}
                         </div>
 
                         <div class="challenge-form__field">
@@ -21,7 +21,7 @@
                                 <label for="phone" class="challenge-form__label challenge-form__label--required">تلفن</label>
                                 <input type="text" id="phone" class="challenge-form__input challenge-form__input--ltr" placeholder="0952654484">
                             </div>
-                            <div class="challenge-form__field-hint"></div>
+                            {{-- <div class="challenge-form__field-hint"></div> --}}
                         </div>
 
                         <div class="challenge-form__field">
@@ -29,7 +29,7 @@
                                 <label for="email" class="challenge-form__label challenge-form__label--required">ایمیل</label>
                                 <input type="text" id="email" class="challenge-form__input challenge-form__input--ltr" placeholder="example@email.com">
                             </div>
-                            <div class="challenge-form__field-hint"></div>
+                            {{-- <div class="challenge-form__field-hint"></div> --}}
                         </div>
 
                         <div class="challenge-form__field">
@@ -37,7 +37,7 @@
                                 <label for="companyName" class="challenge-form__label">نام شرکت</label>
                                 <input type="text" id="companyName" class="challenge-form__input" placeholder="نام شرکت یا سازمان">
                             </div>
-                            <div class="challenge-form__field-hint"></div>
+                            {{-- <div class="challenge-form__field-hint"></div> --}}
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                                 <div class="challenge-form__input-file-name"></div>
                                 <div class="challenge-form__input-file-type">انتخاب فایل pdf</div>
                             </label>
-                            <div class="challenge-form__field-hint"></div>
+                            <div class="challenge-form__field-hint">حداکثر حجم مجاز فایل ۱ مگابایت است</div>
                         </div>
 
                         <div class="challenge-form__field">
@@ -62,7 +62,7 @@
                                 <div class="challenge-form__input-file-name"></div>
                                 <div class="challenge-form__input-file-type">انتخاب فایل pdf</div>
                             </label>
-                            <div class="challenge-form__field-hint"></div>
+                            <div class="challenge-form__field-hint">حداکثر حجم مجاز فایل ۱ مگابایت است</div>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="challenge-form__field-hint"></div>
+                            {{-- <div class="challenge-form__field-hint"></div> --}}
                         </div>
 
                         <div class="challenge-form__field">
@@ -108,7 +108,7 @@
                                 <label for="description" class="challenge-form__label challenge-form__label--hidden-mobile">توضیحات</label>
                                 <textarea name="description" id="description" class="challenge-form__textarea" cols="30" rows="10" placeholder="در صورتی نیاز به توضیحات تکمیلی لطفا در این باکس برای ما یادداشت بگذارید"></textarea>
                             </div>
-                            <div class="challenge-form__field-hint"></div>
+                            {{-- <div class="challenge-form__field-hint"></div> --}}
                         </div>
                     </div>
 

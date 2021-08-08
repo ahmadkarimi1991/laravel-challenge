@@ -822,6 +822,13 @@ a {
   border: 1px solid #dbe4f2;
 }
 
+.challenge-form__field-hint {
+  font-size: 0.875rem;
+  color: #9DB0CB;
+  margin-top: 0.5rem;
+  direction: ltr;
+}
+
 .challenge-form__select {
   position: relative;
   width: calc(100% - 80px);
