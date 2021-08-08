@@ -102,16 +102,27 @@
 </div>
 
 <div class="challenge-projects__project-github">
-    <div class="challenge-projects__project-github-title">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-            <g id="Group_13218" data-name="Group 13218" transform="translate(-1250 -2585)">
-                <rect id="Rectangle_3855" data-name="Rectangle 3855" width="48" height="48" rx="12" transform="translate(1250 2585)" fill="#e7ecf4"></rect>
-                <rect id="Rectangle_3857" data-name="Rectangle 3857" width="38" height="38" rx="8" transform="translate(1255 2590)" fill="#20c5ba"></rect>
-                <path id="github_1_" data-name="github (1)" d="M9,19c-5,1.5-5-2.5-7-3m14,6V18.13a3.37,3.37,0,0,0-.94-2.61c3.14-.35,6.44-1.54,6.44-7A5.439,5.439,0,0,0,20,4.771,5.07,5.07,0,0,0,19.91,1S18.73.65,16,2.48a13.38,13.38,0,0,0-7,0C6.27.65,5.09,1,5.09,1A5.07,5.07,0,0,0,5,4.77,5.44,5.44,0,0,0,3.5,8.55c0,5.42,3.3,6.61,6.44,7A3.37,3.37,0,0,0,9,18.13V22" transform="translate(1262.5 2597.527)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-            </g>
-        </svg>
+    <div class="challenge-projects__project-github-wrap">
+        <div class="challenge-projects__project-github-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <g id="Group_13218" data-name="Group 13218" transform="translate(-1250 -2585)">
+                    <rect id="Rectangle_3855" data-name="Rectangle 3855" width="48" height="48" rx="12" transform="translate(1250 2585)" fill="#e7ecf4"></rect>
+                    <rect id="Rectangle_3857" data-name="Rectangle 3857" width="38" height="38" rx="8" transform="translate(1255 2590)" fill="#20c5ba"></rect>
+                    <path id="github_1_" data-name="github (1)" d="M9,19c-5,1.5-5-2.5-7-3m14,6V18.13a3.37,3.37,0,0,0-.94-2.61c3.14-.35,6.44-1.54,6.44-7A5.439,5.439,0,0,0,20,4.771,5.07,5.07,0,0,0,19.91,1S18.73.65,16,2.48a13.38,13.38,0,0,0-7,0C6.27.65,5.09,1,5.09,1A5.07,5.07,0,0,0,5,4.77,5.44,5.44,0,0,0,3.5,8.55c0,5.42,3.3,6.61,6.44,7A3.37,3.37,0,0,0,9,18.13V22" transform="translate(1262.5 2597.527)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </g>
+            </svg>
 
-        <div>صفحه گیت‌هاب</div>
+            <div>
+                <div class="challenge-projects__project-github-title">صفحه گیت‌هاب</div>
+                <div class="challenge-projects__project-github-content hide-mobile">https://github.com/features/codespaces</div>
+            </div>
+        </div>
+
+        <div class="challenge-projects__project-github-author">
+            <img src="{{ asset('images/author.png') }}" alt="Author" width="24" height="24">
+            <span>توسط حسن سیدی</span>
+        </div>
     </div>
-    <div class="challenge-projects__project-github-content">https://github.com/features/codespaces</div>
+
+    <div class="challenge-projects__project-github-content hide-desktop">https://github.com/features/codespaces</div>
 </div>

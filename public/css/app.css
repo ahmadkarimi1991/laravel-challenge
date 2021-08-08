@@ -396,21 +396,46 @@ a {
   padding: 1rem;
 }
 
-.challenge-projects__project-github-title {
+.challenge-projects__project-github-wrap {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 1rem;
   margin-bottom: 1rem;
 }
-.challenge-projects__project-github-title svg {
+.challenge-projects__project-github-wrap svg {
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
+}
+
+.challenge-projects__project-github-flex {
+  display: flex;
+  align-items: center;
+}
+
+.challenge-projects__project-github-title {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .challenge-projects__project-github-content {
   font-size: 0.875rem;
   color: #6A7D9B;
+}
+
+.challenge-projects__project-github-author {
+  display: none;
+  align-items: center;
+  color: #6A7D9B;
+  border: 1px solid #D8E1EF;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+.challenge-projects__project-github-author img {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
+.hide-mobile {
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -505,6 +530,24 @@ a {
 
   .challenge-projects__projects-wrap {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .challenge-projects__project-github-wrap {
+    margin-bottom: 0;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .challenge-projects__project-github-author {
+    display: flex;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
   }
 }
 .challenge-meetings {
