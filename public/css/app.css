@@ -832,6 +832,7 @@ a {
 .challenge-form__select {
   position: relative;
   width: calc(100% - 80px);
+  border-radius: 0.75rem;
 }
 .challenge-form__select select {
   display: none;
@@ -999,35 +1000,41 @@ a {
     border: 1px solid #dbe4f2;
   }
 
-  .challenge-form__field--error .challenge-form__input {
+  .challenge-form__field--error .challenge-form__input,
+.challenge-form__field--error .challenge-form__textarea, .challenge-form__field--error.challenge-form__select {
     border: 1px solid #f77d7d;
   }
-  .challenge-form__field--error .challenge-form__input:focus {
+  .challenge-form__field--error .challenge-form__input:focus,
+.challenge-form__field--error .challenge-form__textarea:focus, .challenge-form__field--error.challenge-form__select:focus {
     border: 1px solid #f77d7d;
   }
-  .challenge-form__field--error .challenge-form__input::-moz-placeholder {
+  .challenge-form__field--error .challenge-form__input::-moz-placeholder, .challenge-form__field--error .challenge-form__textarea::-moz-placeholder, .challenge-form__field--error.challenge-form__select::-moz-placeholder {
     color: #f77d7d;
   }
-  .challenge-form__field--error .challenge-form__input:-ms-input-placeholder {
+  .challenge-form__field--error .challenge-form__input:-ms-input-placeholder, .challenge-form__field--error .challenge-form__textarea:-ms-input-placeholder, .challenge-form__field--error.challenge-form__select:-ms-input-placeholder {
     color: #f77d7d;
   }
-  .challenge-form__field--error .challenge-form__input::placeholder {
+  .challenge-form__field--error .challenge-form__input::placeholder,
+.challenge-form__field--error .challenge-form__textarea::placeholder, .challenge-form__field--error.challenge-form__select::placeholder {
     color: #f77d7d;
   }
 
-  .challenge-form__field--success .challenge-form__input {
+  .challenge-form__field--success .challenge-form__input,
+.challenge-form__field--success .challenge-form__textarea, .challenge-form__field--success.challenge-form__select {
     border: 1px solid #20c4ba;
   }
-  .challenge-form__field--success .challenge-form__input:focus {
+  .challenge-form__field--success .challenge-form__input:focus,
+.challenge-form__field--success .challenge-form__textarea:focus, .challenge-form__field--success.challenge-form__select:focus {
     border: 1px solid #20c4ba;
   }
-  .challenge-form__field--success .challenge-form__input::-moz-placeholder {
+  .challenge-form__field--success .challenge-form__input::-moz-placeholder, .challenge-form__field--success .challenge-form__textarea::-moz-placeholder, .challenge-form__field--success.challenge-form__select::-moz-placeholder {
     color: #20c4ba;
   }
-  .challenge-form__field--success .challenge-form__input:-ms-input-placeholder {
+  .challenge-form__field--success .challenge-form__input:-ms-input-placeholder, .challenge-form__field--success .challenge-form__textarea:-ms-input-placeholder, .challenge-form__field--success.challenge-form__select:-ms-input-placeholder {
     color: #20c4ba;
   }
-  .challenge-form__field--success .challenge-form__input::placeholder {
+  .challenge-form__field--success .challenge-form__input::placeholder,
+.challenge-form__field--success .challenge-form__textarea::placeholder, .challenge-form__field--success.challenge-form__select::placeholder {
     color: #20c4ba;
   }
 

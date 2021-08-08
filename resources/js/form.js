@@ -138,10 +138,13 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
     const fieldWrap = input.parentElement;
+    console.log(fieldWrap);
+    fieldWrap.classList.remove('challenge-form__field--success');
     fieldWrap.classList.add('challenge-form__field--error');
 }
 
 function setSuccessFor(input, message) {
     const fieldWrap = input.parentElement;
+    fieldWrap.classList.remove('challenge-form__field--error');
     fieldWrap.classList.add('challenge-form__field--success');
 }

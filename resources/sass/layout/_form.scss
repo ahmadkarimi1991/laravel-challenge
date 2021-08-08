@@ -154,6 +154,7 @@
 .challenge-form__select {
     position: relative;
     width: calc(100% - 80px);
+    border-radius: 0.75rem;
 
     select {
         display: none;
@@ -333,7 +334,9 @@
     }
 
     .challenge-form__field--error {
-        .challenge-form__input {
+        .challenge-form__input,
+        .challenge-form__textarea,
+        &.challenge-form__select {
             border: 1px solid #f77d7d;
 
             &:focus {
@@ -344,16 +347,12 @@
                 color: #f77d7d;
             }
         }
-
-        // &~.challenge-form__field-hint {
-        //     color: #f77d7d;
-        //     direction: ltr;
-        //     margin-top: .5rem;
-        // }
     }
 
     .challenge-form__field--success {
-        .challenge-form__input {
+        .challenge-form__input,
+        .challenge-form__textarea,
+        &.challenge-form__select {
             border: 1px solid #20c4ba;
 
             &:focus {
